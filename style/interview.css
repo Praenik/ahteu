@@ -1,0 +1,37 @@
+@import "form.css";
+
+.form {
+    padding: 0 300px;
+    align-items: end;
+}
+
+.form_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+label {
+    margin-right: 15px;
+}
+
+.form_input,
+.form_select,
+.radio_group,
+.form_textarea {
+    width: 250px;
+}
+
+.radio_group_item {
+    display: flex;
+    align-items: center;
+}
+
+.radio_group_item > label {
+    margin-left: 10px;
+}
+
+.form_textarea {
+    height: 100px;
+    resize: none;
+}

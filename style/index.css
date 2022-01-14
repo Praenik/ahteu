@@ -1,0 +1,229 @@
+@import "_vars.css";
+
+/*font-family: 'Baskervville', serif;*/
+/*font-family: 'Roboto', sans-serif;*/
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+body.dark-theme {
+    background-color: #000000;
+}
+
+.b {
+    font-weight: 700;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.company_name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    margin: 0 60px;
+
+    color: var(--orange);
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+.company_name > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.switch-btn {
+    display: inline-block;
+    width: 72px; /* ширина */
+    height: 38px; /* высота */
+    border-radius: 19px; /* радиус скругления */
+    background: #bfbfbf; /* цвет фона */
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 300ms; /* анимация */
+}
+.switch-btn::after {
+    content: "";
+    height: 32px; /* высота кнопки */
+    width: 32px; /* ширина кнопки */
+    border-radius: 17px;
+    background: #fff; /* цвет кнопки */
+    top: 3px; /* положение кнопки по вертикали относительно основы */
+    left: 3px; /* положение кнопки по горизонтали относительно основы */
+    transition-duration: 300ms; /* анимация */
+    position: absolute;
+    z-index: 1;
+}
+.switch-on {
+    background: #118c4e;
+}
+.switch-on::after {
+    left: 37px;
+}
+
+nav {
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 0 60px 0 60px;
+    font-size: 20px;
+}
+
+.nav-link {
+    padding: 10px;
+    margin: -8px 0;
+}
+
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.banner {
+    height: 530px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.banner_title,
+.banner_sub {
+    text-shadow:
+            2px  2px 0 #000,
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px  1px 0 #000,
+            1px  1px 0 #000;
+    color: var(--white);
+}
+
+.banner_title {
+    font-size: 36px;
+}
+
+.banner_sub {
+    font-size: 20px;
+}
+
+.leaders {
+    padding: 180px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.leaders_title {
+    position: relative;
+    text-align: center;
+    color: var(--orange);
+    font-family: 'Baskervville', serif;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    font-size: 40px;
+}
+
+.leaders_title:after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50px;
+    content: '';
+    height: 1px;
+    width: 25%;
+    background-color: var(--orange);
+}
+
+.leaders_text {
+    font-family: 'Roboto', sans-serif;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.1;
+    font-weight: 500;
+}
+
+.leader_item {
+    margin: 80px auto;
+    text-align: center;
+}
+
+.leader_photo {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.leader_name {
+    margin: 25px 0 35px;
+    font-weight: 700;
+}
+
+.leader_desc {
+    line-height: 1.1;
+    font-size: 14px;
+}
+
+.statistic {
+    width: 100%;
+    background-color: var(--dark-blue);
+    padding: 20px 0;
+}
+
+.stat_item {
+    text-align: center;
+}
+
+.stat_number {
+    color: var(--orange);
+    font-family: 'Baskervville', serif;
+    font-size: 50px;
+}
+
+.stat_desc {
+    color: var(--white);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px 50px;
+    font-size: 12px;
+}
+
+.footer_designer {
+    color: var(--white);
+}
+
+/* --- INTERVIEW --- */
+
+.interview_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.interview_form input {
+    width: 200px;
+    margin: 10px;
+}
+
+.interview_form select {
+    width: 200px;
+    margin: 10px;
+}

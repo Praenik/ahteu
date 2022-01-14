@@ -1,0 +1,39 @@
+@import "_vars.css";
+@import "form.css";
+
+.profile_table {
+    display: flex;
+}
+
+.profile_table_left {
+    width: max-content;
+}
+
+.profile_table_row {
+    display: flex;
+    width: max-content;
+}
+
+.profile_table_cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    width: max-content;
+    padding: 10px 25px;
+}
+
+.profile_table_cell#row_title {
+    font-weight: 700;
+}
+
+.profile_table_right {
+    overflow: auto;
+}
+
+.btn_vacancy {
+    display: block;
+    width: max-content;
+    height: max-content;
+    margin: 15px 25px;
+}

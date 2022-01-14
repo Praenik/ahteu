@@ -1,0 +1,79 @@
+@import "_vars.css";
+@import "form.css";
+
+body {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.reg_title {
+    font-family: 'Baskervville', serif;
+    color: var(--orange);
+    text-transform: uppercase;
+    font-size: 48px;
+    margin-top: 30px;
+}
+
+.reg_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg_form_input {
+    width: 20%;
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 15px 0;
+    color: var(--orange);
+    border: 1px solid var(--orange);
+    outline: none;
+    transition: all .2s linear;
+}
+
+.reg_form_input::placeholder {
+    font-size: 16px;
+    color: var(--orange);
+    font-family: inherit;
+    transition: all .2s linear;
+}
+
+.reg_form_input:focus {
+    color: var(--white);
+    border: 1px solid var(--white);
+    background-color: var(--orange);
+}
+
+.reg_form_input:focus::placeholder {
+    color: var(--white);
+}
+
+.reg_btn {
+    width: 20%;
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 15px 0;
+    border: 1px solid var(--orange);
+    outline: none;
+    background-color: var(--white);
+    font-size: 16px;
+    color: var(--orange);
+    font-family: inherit;
+    transition: all .2s linear;
+}
+
+.reg_btn:hover {
+    border: 1px solid var(--white);
+    background-color: var(--orange);
+    color: var(--white);
+}
