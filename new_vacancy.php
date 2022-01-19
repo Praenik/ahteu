@@ -12,15 +12,15 @@
 
 <form class="form" action="php/add_vacancy.php" method="post">
     <div class="form_item">
-        <label for="title">Название: </label>
+        <label for="title">Название</label>
         <input class="form_input" type="text" name="title" id="title" placeholder="Название">
     </div>
     <div class="form_item">
-        <label for="description">Описание: </label>
+        <label for="description">Описание (до 5)</label>
         <textarea class="form_textarea" name="description" id="description"></textarea>
     </div>
     <div class="form_item">
-        <label for="timetable">Занятость: </label>
+        <label for="timetable">Занятость</label>
         <select class="form_select" name="timetable" id="timetable">
             <option value="Полная занятость">Полная занятость</option>
             <option value="Гибкий график">Гибкий график</option>
@@ -28,7 +28,7 @@
         </select>
     </div>
     <div class="form_item">
-        <label for="education">Образование: </label>
+        <label for="education">Образование</label>
         <select class="form_select" name="education" id="education">
             <option value="Высшее">Высшее</option>
             <option value="Среднее">Среднее</option>
@@ -36,11 +36,11 @@
         </select>
     </div>
     <div class="form_item">
-        <label for="salary">Заработная плата: </label>
+        <label for="salary">Заработная плата</label>
         <input class="form_input" type="text" name="salary" id="salary" placeholder="Заработная плата">
     </div>
     <div class="form_item">
-        <label for="eng">Знание английского: </label>
+        <label for="eng">Знание английского</label>
         <select class="form_select" name="eng" id="eng">
             <option value="Нет знаний" selected="selected">Нет знаний</option>
             <option value="A1">A1</option>
@@ -52,7 +52,7 @@
         </select>
     </div>
     <div class="form_item">
-        <label for="drive_license">Водительские права: </label>
+        <label for="drive_license">Водительские права</label>
         <select class="form_select" name="drive_license" id="drive_license">
             <option value="Нет прав" selected="selected">Нет прав</option>
             <option value="A">A</option>
@@ -62,7 +62,7 @@
             <option value="M">M</option>
         </select>
     </div>
-    <button class="btn" type="submit" name="submit" id="submit" value="submit">Внести кандидата</button>
+    <button class="btn" type="submit" name="submit" id="submit" value="submit">Добавить вакансию</button>
 </form>
 
 <?php include_once 'templates/footer.php'?>

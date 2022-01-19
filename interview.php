@@ -12,39 +12,39 @@
 
 <form class="form" action="php/add_interview.php" method="post">
     <div class="form_item">
-        <label for="name">Имя: </label>
+        <label for="name">Имя</label>
         <input class="form_input" type="text" name="name" id="name" placeholder="Имя">
     </div>
     <div class="form_item">
-        <label for="surname">Фамилия: </label>
+        <label for="surname">Фамилия</label>
         <input class="form_input" type="text" name="surname" id="surname" placeholder="Фамилия">
     </div>
     <div class="form_item">
-        <label for="patronymic">Отчество: </label>
+        <label for="patronymic">Отчество</label>
         <input class="form_input" type="text" name="patronymic" id="patronymic" placeholder="Отчество">
     </div>
     <div class="form_item">
-        <label for="birthday">Дата рождения: </label>
+        <label for="birthday">Дата рождения</label>
         <input class="form_input" type="date" name="birthday" id="birthday" placeholder="Дата рождения">
     </div>
     <div class="form_item">
-        <label for="phone">Телефон: </label>
+        <label for="phone">Телефон</label>
         <input class="form_input" type="tel" name="phone" id="phone" placeholder="Телефон">
     </div>
     <div class="form_item">
-        <label for="email">Электронная почта: </label>
+        <label for="email">Электронная почта</label>
         <input class="form_input" type="email" name="email" id="email" placeholder="E-mail">
     </div>
     <div class="form_item">
-        <label for="country">Страна: </label>
+        <label for="country">Страна</label>
         <input class="form_input" type="text" name="country" id="country" placeholder="Страна">
     </div>
     <div class="form_item">
-        <label for="city">Город: </label>
+        <label for="city">Город</label>
         <input class="form_input" type="text" name="city" id="city" placeholder="Город">
     </div>
     <div class="form_item">
-        <label>Гражданство: </label>
+        <label>Гражданство</label>
         <div class="radio_group">
             <div class="radio_group_item">
                 <input class="form_input" type="radio" name="citizenship" id="citizens" value="1">
@@ -57,7 +57,7 @@
         </div>
     </div>
     <div class="form_item">
-        <label for="timetable">Занятость: </label>
+        <label for="timetable">Занятость</label>
         <select class="form_select" name="timetable" id="timetable">
             <option value="Полная занятость">Полная занятость</option>
             <option value="Гибкий график">Гибкий график</option>
@@ -65,7 +65,7 @@
         </select>
     </div>
     <div class="form_item">
-        <label for="post">Вакансия: </label>
+        <label for="post">Вакансия</label>
         <select class="form_select" name="post" id="post">
             <option value="0" selected disabled>Выбрать</option>
             <?php
@@ -79,7 +79,7 @@
         </select>
     </div>
     <div class="form_item">
-        <label for="education">Образование: </label>
+        <label for="education">Образование</label>
         <select class="form_select" name="education" id="education">
             <option value="Высшее">Высшее</option>
             <option value="Среднее">Среднее</option>
@@ -87,11 +87,11 @@
         </select>
     </div>
     <div class="form_item">
-        <label for="salary">Заработная плата: </label>
+        <label for="salary">Заработная плата</label>
         <input class="form_input" type="text" name="salary" id="salary" placeholder="Заработная плата">
     </div>
     <div class="form_item">
-        <label for="eng">Знание английского: </label>
+        <label for="eng">Знание английского</label>
         <select class="form_select" name="eng" id="eng">
             <option value="Нет знаний" selected="selected">Нет знаний</option>
             <option value="A1">A1</option>
@@ -103,7 +103,7 @@
         </select>
     </div>
     <div class="form_item">
-        <label for="drive_license">Водительские права: </label>
+        <label for="drive_license">Водительские права</label>
         <select class="form_select" name="drive_license" id="drive_license">
             <option value="Нет прав" selected="selected">Нет прав</option>
             <option value="A">A</option>

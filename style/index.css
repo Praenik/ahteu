@@ -7,10 +7,51 @@ body {
     max-width: 1920px;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
+
+    transition: all 300ms linear;
 }
 
 body.dark-theme {
-    background-color: #000000;
+    background-color: var(--dark-bg);
+}
+
+body.dark-theme nav {
+    background-color: rgba(97, 97, 97, 0.5);
+}
+
+body.dark-theme div {
+    color: rgb(231, 231, 231);
+}
+
+body.dark-theme input,
+body.dark-theme textarea,
+body.dark-theme select {
+    background-color: var(--dark-bg);
+}
+
+body.dark-theme input:focus,
+body.dark-theme textarea:focus,
+body.dark-theme select:focus {
+    color: var(--dark-bg);
+    border: 1px solid var(--dark-bg);
+    background-color: var(--orange);
+}
+
+body.dark-theme input:focus::placeholder,
+body.dark-theme textarea:focus::placeholder,
+body.dark-theme select:focus::placeholder,
+body.dark-theme option:focus::placeholder {
+    color: var(--dark-bg);
+}
+
+body.dark-theme .btn {
+    background-color: var(--dark-bg);
+}
+
+body.dark-theme .btn:hover {
+    border: 1px solid var(--dark-bg);
+    color: var(--dark-bg);
+    background-color: var(--orange);
 }
 
 .b {
@@ -45,12 +86,12 @@ body.dark-theme {
 
 .switch-btn {
     display: inline-block;
-    width: 72px; /* ширина */
-    height: 38px; /* высота */
-    border-radius: 19px; /* радиус скругления */
+    width: 56px; /* ширина */
+    height: 20px; /* высота */
+    border-radius: 10px; /* радиус скругления */
     background: #bfbfbf; /* цвет фона */
     z-index: 0;
-    margin: 0;
+    margin: 0 10px;
     padding: 0;
     border: none;
     cursor: pointer;
@@ -59,18 +100,18 @@ body.dark-theme {
 }
 .switch-btn::after {
     content: "";
-    height: 32px; /* высота кнопки */
-    width: 32px; /* ширина кнопки */
-    border-radius: 17px;
+    height: 16px; /* высота кнопки */
+    width: 16px; /* ширина кнопки */
+    border-radius: 8px;
     background: #fff; /* цвет кнопки */
-    top: 3px; /* положение кнопки по вертикали относительно основы */
-    left: 3px; /* положение кнопки по горизонтали относительно основы */
+    top: 2px; /* положение кнопки по вертикали относительно основы */
+    left: 2px; /* положение кнопки по горизонтали относительно основы */
     transition-duration: 300ms; /* анимация */
     position: absolute;
     z-index: 1;
 }
 .switch-on {
-    background: #118c4e;
+    background: var(--orange);
 }
 .switch-on::after {
     left: 37px;

@@ -3,6 +3,7 @@
 
 .profile_table {
     display: flex;
+    padding-bottom: 38px;
 }
 
 .profile_table_left {

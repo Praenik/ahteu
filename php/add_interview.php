@@ -24,7 +24,9 @@ $data = [
 
 $prep = $db->prepare("INSERT INTO $db_table (hr_id, name, surname, patronymic, post, birthday, phone, email, country, city, citizenship, timetable, education, salary, eng, drive_license) VALUES (:hr_id, :name, :surname, :patronymic, :post, :birthday, :phone, :email, :country, :city, :citizenship, :timetable, :education, :salary, :eng, :drive_license)");
 $query = $prep->execute($data);
+$query = $db->query("SELECT id, post FROM interview ORDER BY id DESC LIMIT 1");
+$vacancy = $query->fetch(PDO::FETCH_NUM);
 
 header("HTTP/1.1 301 Moved Permanently");
-header("Location: ".$address_site."/candidates.php");
+header("Location: ".$address_site."/hardskill.php?interview_id=$vacancy[0]&vacancy_id=$vacancy[1]");
 exit();
